@@ -2,6 +2,8 @@
 from selenium import webdriver
 import time
 import sys
+import csv
+import pandas as pd
 
 #declaração de variáveis
 correio = "https://www2.correios.com.br/sistemas/rastreamento/default.cfm"
@@ -300,7 +302,7 @@ if qtdd_codigos > 1:
             y = 49 + x
             if x>len(codigos):
                 driver.close()
-                sys.exit()
+                break
             while y < (len(codigos) -1)*2 :
                 try:
                     codigos_escrever = driver.find_element_by_xpath('//*[@id="objetos"]')
@@ -329,4 +331,16 @@ if qtdd_codigos > 1:
                     print(erro)
                     break
 
-    driver.close()
+#cria um arquivo .csv com todos os resultados.
+with open('resultado_rastreio.csv', 'w') as resultado:
+    colunas = ['Codigo', 'Status_Rastreio']
+    writer = csv.DictWriter(resultado, fieldnames=colunas)
+    writer.writeheader()
+    for i in range(0, len(codigos) -1):
+        try:
+            writer.writerow({'Codigo': codigos[i], 'Status_Rastreio': status[i]})
+        except:
+            break
+    print("por aqui passou! kkkk")
+df = pd.read_csv('resultado_rastreio.csv', encoding='windows-1252')
+print(df.head())
