@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8927ecfa-6caf-42c7-b129-c75bc16ead90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/correio/coisinhas.py" beforeDir="false" afterPath="$PROJECT_DIR$/correio/testes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/WebCrawler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/dictionaries/nick.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/busca_correio_ilimitada.py" beforeDir="false" afterPath="$PROJECT_DIR$/correio/busca_correio_ilimitada.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/correio/resultado_rastreio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/correio/resultado_rastreio.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +24,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/correio/busca_correio_ilimitada.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1194">
-              <caret line="346" lean-forward="true" selection-start-line="346" selection-end-line="346" />
+            <state relative-caret-position="440">
+              <caret line="349" column="12" lean-forward="true" selection-end-line="355" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
+                <element signature="e#1708#5720#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="241" selection-start-line="241" selection-end-line="241" />
             </state>
           </provider>
         </entry>
@@ -41,8 +42,8 @@
             </state>
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -151,16 +152,25 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -173,17 +183,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/correio/busca_correio_ilimitada.py</url>
-          <line>334</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
@@ -200,17 +199,18 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/correio/busca_correio_ilimitada.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1194">
-          <caret line="346" lean-forward="true" selection-start-line="346" selection-end-line="346" />
+        <state relative-caret-position="440">
+          <caret line="349" column="12" lean-forward="true" selection-end-line="355" />
           <folding>
             <element signature="e#14#44#0" expanded="true" />
+            <element signature="e#1708#5720#0" />
           </folding>
         </state>
       </provider>
