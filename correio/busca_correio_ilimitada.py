@@ -10,6 +10,8 @@ correio = "https://www2.correios.com.br/sistemas/rastreamento/default.cfm"
 qtdd_codigos = ""
 codigos = []
 status = []
+datas = []
+locais = []
 
 #loop básico para receber a quantidade de códigos que serão utilizados durante a execução
 while type(qtdd_codigos) != int:
@@ -322,9 +324,17 @@ if qtdd_codigos > 1:
                         try:
                             ultimo_status_i = driver.find_element_by_xpath('//*[@id="sroFormMultiResultado"]/table/tbody/tr[' + str(i + 1) + ']/td[3]/b').text
                             status.append(ultimo_status_i)
+                            data_local = driver.find_element_by_xpath('//*[@id="sroFormMultiResultado"]/table/tbody/tr['+ str(i+1) +']/td[4]').text
 
-                            print("Código: %s ---- Status: %s" % (codigos[i + x], status[-1]))
-                        except:
+                            dates = data_local.split(' ')
+                            data = dates[0]
+                            datas.append(data)
+                            local = data_local.replace(data,"")
+                            locais.append(local)
+
+                            print("Código: %s ---- Status: %s ---- Data: %s" % (codigos[i + x], status[-1], data[-1]))
+                        except Exception as erro:
+                            print(erro)
                             pass
 
                 except Exception as erro:
@@ -333,14 +343,13 @@ if qtdd_codigos > 1:
 
 #cria um arquivo .csv com todos os resultados.
 with open('resultado_rastreio.csv', 'w') as resultado:
-    colunas = ['Codigo', 'Status_Rastreio']
+    colunas = ['Codigo', 'Status_Rastreio', 'Data', 'Local']
     writer = csv.DictWriter(resultado, fieldnames=colunas)
     writer.writeheader()
     for i in range(0, len(codigos) -1):
         try:
-            writer.writerow({'Codigo': codigos[i], 'Status_Rastreio': status[i]})
+            writer.writerow({'Codigo': codigos[i], 'Status_Rastreio': status[i], 'Data': datas[i], 'Local': locais[i]})
         except:
             break
-    print("por aqui passou! kkkk")
 df = pd.read_csv('resultado_rastreio.csv', encoding='windows-1252')
 print(df.head())
