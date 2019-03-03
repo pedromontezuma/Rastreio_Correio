@@ -2,8 +2,6 @@
 from selenium import webdriver
 import time
 import sys
-import csv
-import pandas as pd
 
 #declaração de variáveis
 correio = "https://www2.correios.com.br/sistemas/rastreamento/default.cfm"
@@ -28,7 +26,7 @@ if qtdd_codigos == 0:
 #cechagem da quantidade de códigos
 if qtdd_codigos == 1:
     resposta = input("Digite o código desejado: ")
-    driver = webdriver.Chrome(executable_path='C:/Users/Cristian/PycharmProjects/WebCrawling/venv/Lib/site-packages/chromedriver/chromedriver.exe')
+    driver = webdriver.PhantomJS('C:/Users/Cristian/Desktop/Rastreio_Correio/correio/phantomjs-2.1.1-windows/bin/phantomjs.exe')
     driver.get(correio)
 
     codigos_escrever = driver.find_element_by_xpath('//*[@id="objetos"]')
@@ -50,10 +48,18 @@ if qtdd_codigos > 1:
      #   codigos.append(resposta)
      #   i+=1
 
-    driver = webdriver.Chrome(executable_path='C:/Users/Cristian/PycharmProjects/WebCrawling/venv/Lib/site-packages/chromedriver/chromedriver.exe')
+    driver = webdriver.PhantomJS('C:/Users/Cristian/Desktop/Rastreio_Correio/correio/phantomjs-2.1.1-windows/bin/phantomjs.exe')
     driver.get(correio)
     codigos = ["PS290365926BR",
 "PS290252456BR",
+"PS290160746BR",
+"PS290123173BR",
+"PS290328605BR",
+"PS290489038BR",
+"PS290384531BR",
+"PS290600451BR",
+"PS290124752BR",
+"PS290439266BR",
 "PS290239790BR",
 "PS290298651BR",
 "PS290392325BR",
@@ -284,42 +290,42 @@ if qtdd_codigos > 1:
     codigos_escrever = driver.find_element_by_xpath('//*[@id="objetos"]')
     codigos_escrever.clear()
 
-    for a in range(0, 1000):
-        driver.get(correio)
-        x = 50 * a
-        y = 50 + x
-        if x > len(codigos):
-            driver.close()
-            break
-        while y < (len(codigos)) * 2:
-            codigos_escrever = driver.find_element_by_xpath('//*[@id="objetos"]')
-            codigos_escrever.clear()
-            for i in codigos[x:y]:
-                codigos_escrever.send_keys(i + ";")
-            buscar = driver.find_element_by_xpath('//*[@id="btnPesq"]')
-            buscar.click()
-
-            for i in range(len(codigos)):
+    if len(codigos) <= 50:
+        for i in codigos:
+            codigos_escrever.send_keys(i + ";")
+    else:
+        for a in range(0,1000):
+            driver.get(correio)
+            x = 50*a
+            y = 50 + x
+            if x>len(codigos):
+                driver.close()
+                sys.exit()
+            while y < (len(codigos))*2 :
                 try:
-                    print(i)
-                    ultimo_status_i = driver.find_element_by_xpath(
-                        '//*[@id="sroFormMultiResultado"]/table/tbody/tr[' + str(i + 1) + ']/td[3]/b').text
-                    status.append(ultimo_status_i)
-                    print("Código: %s ---- Status: %s" % (codigos[i], status[-1]))
-                except:
-                    pass
-    driver.close()
+                    codigos_escrever = driver.find_element_by_xpath('//*[@id="objetos"]')
+                    codigos_escrever.clear()
+                    for i in codigos[x:y]:
+                        codigos_escrever.send_keys(i + ";")
+                    buscar = driver.find_element_by_xpath('//*[@id="btnPesq"]')
+                    buscar.click()
 
-#cria um arquivo .csv com todos os resultados.
-with open('resultado_rastreio.csv', 'w') as resultado:
-    colunas = ['Codigo', 'Status_Rastreio']
-    writer = csv.DictWriter(resultado, fieldnames=colunas)
-    writer.writeheader()
-    for i in range(0, len(codigos)):
-        try:
-            writer.writerow({'Codigo': codigos[i], 'Status_Rastreio': status[i]})
-        except:
-            break
-    print("por aqui passou! kkkk")
-df = pd.read_csv('resultado_rastreio.csv', encoding='windows-1252')
-print(df.head())
+                    for i in range(len(codigos[x:y])):
+                        """if i%50:
+                            pass
+                        else:"""
+                        print(i + x)
+                        print(codigos[i + x])
+
+                        try:
+                            ultimo_status_i = driver.find_element_by_xpath('//*[@id="sroFormMultiResultado"]/table/tbody/tr[' + str(i + 1) + ']/td[3]/b').text
+                            status.append(ultimo_status_i)
+
+                            print("Código: %s ---- Status: %s" % (codigos[i + x], status[-1]))
+                        except:
+                            pass
+
+                except Exception as erro:
+                    break
+
+    driver.close()
