@@ -1,11 +1,11 @@
 Codigo,Status_Rastreio
 PS290365926BR,Conferido
-PS290252456BR,Objeto saiu para entrega ao destinatário
+PS290252456BR,Objeto entregue ao destinatário
 PS290160746BR,Objeto entregue ao destinatário
 PS290123173BR,Objeto entregue ao destinatário
 PS290328605BR,Objeto entregue ao destinatário
 PS290489038BR,Objeto entregue ao destinatário
-PS290384531BR,Objeto encaminhado
+PS290384531BR,Objeto entregue ao destinatário
 PS290600451BR,Objeto entregue ao destinatário
 PS290124752BR,Objeto entregue ao destinatário
 PS290439266BR,Objeto entregue ao destinatário
@@ -24,7 +24,7 @@ PS290363735BR,Objeto entregue ao destinatário
 PS290536444BR,Objeto entregue ao destinatário
 OG355438823BR,Objeto entregue ao destinatário
 PP965073647BR,Objeto entregue ao destinatário
-PS290351873BR,Objeto saiu para entrega ao destinatário
+PS290351873BR,Objeto entregue ao destinatário
 PS290297506BR,Objeto entregue ao destinatário
 PS290167435BR,Objeto entregue ao destinatário
 PS290317727BR,Objeto entregue ao destinatário
@@ -33,7 +33,7 @@ PS290220921BR,Objeto entregue ao destinatário
 PS290255996BR,Objeto entregue ao destinatário
 PP965142360BR,Objeto entregue ao destinatário
 PS290446885BR,Objeto entregue ao destinatário
-PS290152170BR,Objeto saiu para entrega ao destinatário
+PS290152170BR,Objeto entregue ao destinatário
 PS290279459BR,Objeto entregue ao destinatário
 PS290120720BR,Objeto entregue ao destinatário
 PS290134485BR,Objeto entregue ao destinatário
@@ -51,14 +51,14 @@ PS290150995BR,Objeto entregue ao destinatário
 PS290176335BR,Objeto entregue ao destinatário
 PS290281996BR,Objeto entregue ao destinatário
 PS290464861BR,Objeto entregue ao destinatário
-PS290397844BR,Objeto aguardando retirada no endereço indicado
+PS290397844BR,Objeto entregue ao destinatário
 PS290400367BR,Objeto entregue ao destinatário
 PS290514421BR,Objeto entregue ao destinatário
 PS290374401BR,Objeto entregue ao destinatário
 PS290345294BR,Objeto entregue ao destinatário
 PS290460462BR,Objeto entregue ao destinatário
 PS290363196BR,Objeto entregue ao destinatário
-OG673717575BR,Objeto saiu para entrega ao destinatário
+OG673717575BR,Objeto entregue ao destinatário
 PS290293521BR,Objeto entregue ao destinatário
 PS290409661BR,Objeto entregue ao destinatário
 PS290266203BR,Objeto entregue ao destinatário
@@ -77,7 +77,7 @@ OG673737699BR,Objeto entregue ao destinatário
 PS290194501BR,Objeto entregue ao destinatário
 PS290394879BR,Objeto entregue ao destinatário
 OG355515128BR,Objeto entregue ao destinatário
-PS290379576BR,Objeto encaminhado
+PS290379576BR,Objeto entregue ao destinatário
 PS290459190BR,Objeto entregue ao destinatário
 PS290502627BR,Objeto entregue ao destinatário
 PS290486235BR,Objeto entregue ao destinatário
@@ -86,12 +86,12 @@ PS290135242BR,Objeto entregue ao destinatário
 PS290285352BR,Objeto entregue ao destinatário
 PS290286534BR,Objeto entregue ao destinatário
 PS290421883BR,Objeto entregue ao destinatário
-PS290339563BR,Objeto encaminhado
+PS290339563BR,Objeto entregue ao destinatário
 PS290348463BR,Objeto encaminhado
 PS290507876BR,Objeto entregue ao destinatário
 PS290526570BR,Objeto entregue ao destinatário
 PS290228430BR,Objeto entregue ao destinatário
-PS290460459BR,Objeto encaminhado
+PS290460459BR,Objeto entregue ao destinatário
 PS290305247BR,Objeto entregue ao destinatário
 OG673304260BR,Objeto entregue ao destinatário
 OG355432370BR,Objeto entregue ao destinatário
@@ -158,8 +158,8 @@ OG673293995BR,Objeto entregue ao destinatário
 OG673676204BR,Objeto entregue ao destinatário
 OG673753586BR,Objeto entregue ao destinatário
 PS290430911BR,Objeto entregue ao destinatário
-OG355691856BR,Objeto encaminhado
-PS290478392BR,Objeto aguardando retirada no endereço indicado
+OG355691856BR,Objeto entregue ao destinatário
+PS290478392BR,Objeto entregue ao destinatário
 OG355438117BR,Objeto entregue ao destinatário
 OG355560816BR,Objeto entregue ao destinatário
 OG673704673BR,Objeto entregue ao destinatário
@@ -191,7 +191,7 @@ OG355387106BR,Objeto entregue ao destinatário
 PS290235912BR,Objeto entregue ao destinatário
 OG355597144BR,Objeto entregue ao destinatário
 OG673680844BR,Objeto entregue ao destinatário
-OG673465390BR,Objeto saiu para entrega ao destinatário
+OG673465390BR,Objeto entregue ao destinatário
 PS290306018BR,Objeto entregue ao destinatário
 OG673427309BR,Objeto entregue ao destinatário
 OG673318480BR,Objeto entregue ao destinatário
@@ -201,13 +201,13 @@ OG673718289BR,Objeto entregue ao destinatário
 PS290296797BR,Objeto entregue ao destinatário
 PS290344237BR,Objeto entregue ao destinatário
 PS290150151BR,Objeto entregue ao destinatário
-OG673303030BR,Objeto saiu para entrega ao destinatário
+OG673303030BR,Objeto entregue ao destinatário
 OG673718955BR,Objeto entregue ao destinatário
 OG673672074BR,Objeto entregue ao destinatário
 OG673475088BR,Objeto entregue ao destinatário
 PS290317262BR,Objeto entregue ao destinatário
 PS290534253BR,Objeto entregue ao destinatário
-OG673727674BR,Objeto saiu para entrega ao destinatário
+OG673727674BR,Objeto entregue ao destinatário
 OG673319922BR,Objeto entregue ao destinatário
 PS290362301BR,Objeto entregue ao destinatário
 PS290202993BR,Objeto entregue ao destinatário
@@ -229,4 +229,4 @@ PS290202741BR,Objeto entregue ao destinatário
 OG355426357BR,Objeto entregue ao destinatário
 OG355484289BR,Objeto entregue ao destinatário
 PS290279122BR,Objeto entregue ao destinatário
-OG673407485BR,Objeto saiu para entrega ao destinatário
+OG673407485BR,Objeto entregue ao destinatário
