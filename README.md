@@ -7,8 +7,9 @@ Por padrão, o máximo de códigos que podem ser rastreados é 50000, mas você 
 
 Para utilizar o código, siga os passos:
 Se você não tem a biblioteca selenium instalada, basta digitar o comando "pip install selenium";
-O próximo passo é adicionar o chromedriver.exe no PATH do windows. (Isso é com você ;D);
-Adicionar os códigos que deseja na lista 'codigos'
+Se você não tem a biblioteca pandas instalada, basta digitar o comando "pip install pandas";
+Mudar o path do PhantomJS para o caminho correto correspondente à sua máquina;
+Adicionar os códigos que deseja na lista 'codigos';
 Rodar o código e ver a mágica acontecer :)
 
 Quaisquer dúvidas, entre em contato: pedro.montezuma@hotmail.com
