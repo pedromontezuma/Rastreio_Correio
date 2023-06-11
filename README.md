@@ -12,4 +12,3 @@ Mudar o path do PhantomJS para o caminho correto correspondente à sua máquina;
 Adicionar os códigos que deseja na lista 'codigos';
 Rodar o código e ver a mágica acontecer :)
 
-Quaisquer dúvidas, entre em contato: pedro.montezuma@hotmail.com
